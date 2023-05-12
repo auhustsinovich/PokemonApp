@@ -24,7 +24,7 @@ class PokemonDetailsViewController: BaseViewController {
         pokemonTypesLabel.text = ("Types: \(pokemon.commaTypes)")
         pokemonAbilitiesLabel.text = ("Abilities: \(pokemon.commaAbilities)")
         pokemonWeightLabel.text = ("Weight: \(pokemon.weight) kg")
-        pokemonHeightLabel.text = ("Weight: \(pokemon.height) cm")
+        pokemonHeightLabel.text = ("Height: \(pokemon.height) cm")
 
         guard let pokemonImage = UIImage(data: pokemon.imageData) else {
             return pokemonImageView.image = UIImage(named: "pokemonLogo")
