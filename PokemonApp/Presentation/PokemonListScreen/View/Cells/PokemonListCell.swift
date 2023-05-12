@@ -1,12 +1,4 @@
-//
-//  PokemonListCell.swift
-//  PokemonApp
-//
-//  Created by Daniil Auhustsinovich on 12.05.23.
-//
-
 import UIKit
-
 /// A UITableViewCell subclass to display a single Pokemon item in the list.
 class PokemonListCell: UITableViewCell {
 

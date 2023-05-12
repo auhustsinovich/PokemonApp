@@ -1,5 +1,6 @@
 import Foundation
-
+/// Handles network requests and responses.
+/// - Note: This class is a singleton, and should be accessed via the shared property.
 final class NetworkManager {
 
     // MARK: - Internal interface

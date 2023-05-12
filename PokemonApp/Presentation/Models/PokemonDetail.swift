@@ -1,5 +1,4 @@
 import Foundation
-
 /// Represents a PokemonDetail model.
 struct PokemonDetail: Decodable {
 

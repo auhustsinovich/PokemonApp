@@ -1,5 +1,4 @@
 import UIKit
-
 /// A simple image cache that stores images in memory using NSCache.
 class ImageCache {
 
@@ -33,7 +32,7 @@ class ImageCache {
             completion(.success(cacheImage))
             return
         }
-
+        
         // Fetching image from network
         NetworkManager.shared.fetchImage(from: url) { result in
             switch result {

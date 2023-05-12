@@ -20,7 +20,6 @@
 		A5CA75DF2A0E3A01000EE193 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A5CA75DE2A0E3A01000EE193 /* README.md */; };
 		A5CA75EE2A0E46D7000EE193 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75ED2A0E46D7000EE193 /* NetworkManager.swift */; };
 		A5CA75F12A0E4745000EE193 /* EndpointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F02A0E4745000EE193 /* EndpointAPI.swift */; };
-		A5CA75F32A0E4764000EE193 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F22A0E4764000EE193 /* HTTPMethod.swift */; };
 		A5CA75F52A0E477D000EE193 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F42A0E477D000EE193 /* NetworkError.swift */; };
 		A5CA75F82A0E48A3000EE193 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F72A0E48A3000EE193 /* ImageCache.swift */; };
 		A5CA75FC2A0E4D71000EE193 /* pixelfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5CA75FB2A0E4D71000EE193 /* pixelfont.ttf */; };
@@ -78,7 +77,6 @@
 		A5CA75DE2A0E3A01000EE193 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A5CA75ED2A0E46D7000EE193 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A5CA75F02A0E4745000EE193 /* EndpointAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointAPI.swift; sourceTree = "<group>"; };
-		A5CA75F22A0E4764000EE193 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		A5CA75F42A0E477D000EE193 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A5CA75F72A0E48A3000EE193 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A5CA75FB2A0E4D71000EE193 /* pixelfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixelfont.ttf; sourceTree = "<group>"; };
@@ -300,7 +298,6 @@
 			isa = PBXGroup;
 			children = (
 				A5CA75F02A0E4745000EE193 /* EndpointAPI.swift */,
-				A5CA75F22A0E4764000EE193 /* HTTPMethod.swift */,
 				A5CA75F42A0E477D000EE193 /* NetworkError.swift */,
 			);
 			path = Helpers;
@@ -317,8 +314,8 @@
 		A5CA75FD2A0E4E7F000EE193 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				A5CA76022A0E4EF2000EE193 /* BasePresenter.swift */,
 				A5CA76042A0E4F18000EE193 /* Presenter.swift */,
+				A5CA76022A0E4EF2000EE193 /* BasePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -326,8 +323,8 @@
 		A5CA75FE2A0E4E89000EE193 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5CA76062A0E4F39000EE193 /* BaseViewController.swift */,
 				A5CA76082A0E4F53000EE193 /* ViewLifecycleDelegate.swift */,
+				A5CA76062A0E4F39000EE193 /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -549,7 +546,6 @@
 				A5CA762A2A0E5B32000EE193 /* PokemonListPresenter.swift in Sources */,
 				A571ABFB2A0E821E00125FE0 /* Alert.swift in Sources */,
 				A5CA76282A0E5B1A000EE193 /* PokemonListRouter.swift in Sources */,
-				A5CA75F32A0E4764000EE193 /* HTTPMethod.swift in Sources */,
 				A571ABF72A0E7AA800125FE0 /* PokemonDetailsViewModel.swift in Sources */,
 				A5CA75AF2A0E2836000EE193 /* AppDelegate.swift in Sources */,
 				A5CA760C2A0E51B8000EE193 /* PokemonList.swift in Sources */,
