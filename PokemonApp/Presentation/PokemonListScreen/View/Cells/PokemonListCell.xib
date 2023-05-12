@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pixelfont.ttf">
+            <string>pixelmix</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="Jx6-DZ-bEp" customClass="PokemonListCell" customModule="PokemonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jx6-DZ-bEp" id="aTP-64-UFy">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="edC-k0-mIW">
+                        <rect key="frame" x="16" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="EqC-UE-CTZ"/>
+                            <constraint firstAttribute="height" constant="50" id="QJp-Lr-Oep"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcU-rL-vv1">
+                        <rect key="frame" x="81" y="26.666666666666671" width="231" height="17"/>
+                        <fontDescription key="fontDescription" name="pixelmix" family="pixelmix" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.08235294118" green="0.39607843139999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="BcU-rL-vv1" firstAttribute="centerY" secondItem="aTP-64-UFy" secondAttribute="centerY" id="H67-Cs-ZLZ"/>
+                    <constraint firstItem="edC-k0-mIW" firstAttribute="leading" secondItem="aTP-64-UFy" secondAttribute="leading" constant="16" id="WdS-5M-HRc"/>
+                    <constraint firstAttribute="bottom" secondItem="edC-k0-mIW" secondAttribute="bottom" constant="10" id="bTO-iv-vsi"/>
+                    <constraint firstItem="edC-k0-mIW" firstAttribute="top" secondItem="aTP-64-UFy" secondAttribute="top" constant="10" id="dLI-MD-up0"/>
+                    <constraint firstItem="BcU-rL-vv1" firstAttribute="centerX" secondItem="aTP-64-UFy" secondAttribute="centerX" id="ilX-uT-5Hy"/>
+                    <constraint firstItem="BcU-rL-vv1" firstAttribute="leading" secondItem="edC-k0-mIW" secondAttribute="trailing" constant="15" id="msF-rJ-VGO"/>
+                    <constraint firstItem="BcU-rL-vv1" firstAttribute="centerY" secondItem="edC-k0-mIW" secondAttribute="centerY" id="ocK-sb-fg6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="BcU-rL-vv1" id="cq1-JN-Llj"/>
+                <outlet property="pokemonImageView" destination="edC-k0-mIW" id="5uM-ey-17i"/>
+            </connections>
+            <point key="canvasLocation" x="-5.343511450381679" y="32.04225352112676"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pokemonLogo" width="853.33331298828125" height="314"/>
+    </resources>
+</document>
