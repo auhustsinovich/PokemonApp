@@ -1,5 +1,4 @@
 import UIKit
-
 /// A simple image cache that stores images in memory using NSCache.
 class ImageCache {
 
@@ -21,30 +20,6 @@ class ImageCache {
     ///   - key: The unique key associated with the image.
     func setObject(_ object: UIImage, forKey key: NSString) {
         cache.setObject(object, forKey: key)
-    }
-
-    /// Fetches an image from a URL, caching it if possible.
-    /// - Parameters:
-    ///   - url: The URL of the image to fetch.
-    ///   - completion: A closure that is called when the image is fetched or an error occurs.
-    func getImage(from url: URL, completion: @escaping(Result<UIImage, Error>) -> Void) {
-        // Getting image from cache
-        if let cacheImage = ImageCache.shared.object(forKey: url.lastPathComponent as NSString) {
-            completion(.success(cacheImage))
-            return
-        }
-
-        // Fetching image from network
-        NetworkManager.shared.fetchImage(from: url) { result in
-            switch result {
-            case .success(let imageData):
-                guard let image = UIImage(data: imageData) else { return }
-                ImageCache.shared.setObject(image, forKey: url.lastPathComponent as NSString)
-                completion(.success(image))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
     }
 
     // MARK: - Private interface

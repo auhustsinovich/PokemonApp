@@ -1,13 +1,8 @@
-//
-//  PokemonDetailsViewController.swift
-//  PokemonApp
-//
-//  Created by Daniil Auhustsinovich on 12.05.23.
-//
-
 import UIKit
 
 class PokemonDetailsViewController: BaseViewController {
+
+    // MARK: - Internal interface
 
     @IBOutlet weak var pokemonImageView: UIImageView!
 
@@ -17,19 +12,12 @@ class PokemonDetailsViewController: BaseViewController {
     @IBOutlet weak var pokemonWeightLabel: UILabel!
     @IBOutlet weak var pokemonHeightLabel: UILabel!
 
-    private var pokemon = PokemonDetailViewModel()  {
-        didSet {
-            updateUI(with: pokemon)
-        }
-    }
-    private var pokemonDetailsPresenter: PokemonDetailsPresenter? {
-        return presenter as? PokemonDetailsPresenter
-    }
+    /**
+    Updates the UI of the PokemonDetailsViewController with the information of a given PokemonDetailViewModel.
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
+    - Parameters:
+        - pokemon: The PokemonDetailViewModel object containing the information to display in the details screen.
+     */
     func updateUI(with pokemon: PokemonDetailViewModel) {
         title = "#\(pokemon.id)  \(pokemon.name)"
         pokemonNameLabel.text = ("Name: \(pokemon.name)")
@@ -42,5 +30,16 @@ class PokemonDetailsViewController: BaseViewController {
             return pokemonImageView.image = UIImage(named: "pokemonLogo")
         }
         pokemonImageView.image = pokemonImage
+    }
+
+    // MARK: - Private interface
+
+    private var pokemon = PokemonDetailViewModel()  {
+        didSet {
+            updateUI(with: pokemon)
+        }
+    }
+    private var pokemonDetailsPresenter: PokemonDetailsPresenter? {
+        return presenter as? PokemonDetailsPresenter
     }
 }

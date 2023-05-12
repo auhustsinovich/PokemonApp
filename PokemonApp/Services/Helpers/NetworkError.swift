@@ -1,5 +1,4 @@
 import Foundation
-
 /// Possible error cases  that can occur during network communication.
 enum NetworkError: Error {
     /// The URL provided for network communication is invalid.

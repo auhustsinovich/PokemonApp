@@ -1,5 +1,4 @@
 import UIKit
-
 /// Represents a PokemonDetailViewModel.
 struct PokemonDetailViewModel: Codable {
 

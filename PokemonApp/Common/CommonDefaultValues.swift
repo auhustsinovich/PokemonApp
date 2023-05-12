@@ -3,6 +3,7 @@ import Foundation
 enum CommonDefaultValues {
 
     // MARK: - Properties
+    
     /// The default URL for Pokemon images from the PokeAPI.
     static let imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
 }
