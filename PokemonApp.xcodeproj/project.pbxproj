@@ -19,6 +19,7 @@
 		A5CA75F12A0E4745000EE193 /* EndpointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F02A0E4745000EE193 /* EndpointAPI.swift */; };
 		A5CA75F32A0E4764000EE193 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F22A0E4764000EE193 /* HTTPMethod.swift */; };
 		A5CA75F52A0E477D000EE193 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F42A0E477D000EE193 /* NetworkError.swift */; };
+		A5CA75F82A0E48A3000EE193 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F72A0E48A3000EE193 /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A5CA75F02A0E4745000EE193 /* EndpointAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointAPI.swift; sourceTree = "<group>"; };
 		A5CA75F22A0E4764000EE193 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		A5CA75F42A0E477D000EE193 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A5CA75F72A0E48A3000EE193 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		A5CA75E52A0E4415000EE193 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A5CA75F62A0E4897000EE193 /* Cache */,
 				A5CA75EC2A0E46C9000EE193 /* Network */,
 				A5CA75EF2A0E4713000EE193 /* Helpers */,
 			);
@@ -206,6 +209,14 @@
 				A5CA75F42A0E477D000EE193 /* NetworkError.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A5CA75F62A0E4897000EE193 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA75F72A0E48A3000EE193 /* ImageCache.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +353,7 @@
 			files = (
 				A5CA75EE2A0E46D7000EE193 /* NetworkManager.swift in Sources */,
 				A5CA75F52A0E477D000EE193 /* NetworkError.swift in Sources */,
+				A5CA75F82A0E48A3000EE193 /* ImageCache.swift in Sources */,
 				A5CA75B32A0E2836000EE193 /* ViewController.swift in Sources */,
 				A5CA75F32A0E4764000EE193 /* HTTPMethod.swift in Sources */,
 				A5CA75AF2A0E2836000EE193 /* AppDelegate.swift in Sources */,
