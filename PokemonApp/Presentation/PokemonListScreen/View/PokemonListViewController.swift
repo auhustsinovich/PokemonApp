@@ -98,5 +98,6 @@ extension PokemonListViewController: UITableViewDelegate, UITableViewDataSource 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        pokemonListPresenter?.showPokemonInfo(with: pokemons[indexPath.row].id ?? 0)
     }
 }
