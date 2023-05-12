@@ -14,8 +14,6 @@
 		A5CA75B82A0E2836000EE193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CA75B72A0E2836000EE193 /* Assets.xcassets */; };
 		A5CA75BB2A0E2836000EE193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CA75B92A0E2836000EE193 /* LaunchScreen.storyboard */; };
 		A5CA75C62A0E2836000EE193 /* PokemonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75C52A0E2836000EE193 /* PokemonAppTests.swift */; };
-		A5CA75D02A0E2836000EE193 /* PokemonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75CF2A0E2836000EE193 /* PokemonAppUITests.swift */; };
-		A5CA75D22A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75D12A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift */; };
 		A5CA75DF2A0E3A01000EE193 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A5CA75DE2A0E3A01000EE193 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +46,6 @@
 		A5CA75C12A0E2836000EE193 /* PokemonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CA75C52A0E2836000EE193 /* PokemonAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAppTests.swift; sourceTree = "<group>"; };
 		A5CA75CB2A0E2836000EE193 /* PokemonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5CA75CF2A0E2836000EE193 /* PokemonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAppUITests.swift; sourceTree = "<group>"; };
-		A5CA75D12A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A5CA75DE2A0E3A01000EE193 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +80,6 @@
 				A5CA75DE2A0E3A01000EE193 /* README.md */,
 				A5CA75AD2A0E2836000EE193 /* PokemonApp */,
 				A5CA75C42A0E2836000EE193 /* PokemonAppTests */,
-				A5CA75CE2A0E2836000EE193 /* PokemonAppUITests */,
 				A5CA75AC2A0E2836000EE193 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,13 +97,13 @@
 		A5CA75AD2A0E2836000EE193 /* PokemonApp */ = {
 			isa = PBXGroup;
 			children = (
-				A5CA75AE2A0E2836000EE193 /* AppDelegate.swift */,
-				A5CA75B02A0E2836000EE193 /* SceneDelegate.swift */,
-				A5CA75B22A0E2836000EE193 /* ViewController.swift */,
-				A5CA75B42A0E2836000EE193 /* Main.storyboard */,
-				A5CA75B72A0E2836000EE193 /* Assets.xcassets */,
-				A5CA75B92A0E2836000EE193 /* LaunchScreen.storyboard */,
-				A5CA75BC2A0E2836000EE193 /* Info.plist */,
+				A5CA75E02A0E4360000EE193 /* Application */,
+				A5CA75E12A0E436C000EE193 /* Base */,
+				A5CA75E22A0E4379000EE193 /* Common */,
+				A5CA75E32A0E4389000EE193 /* Extensions */,
+				A5CA75E42A0E43AC000EE193 /* Presentation */,
+				A5CA75E52A0E4415000EE193 /* Services */,
+				A5CA75E72A0E4434000EE193 /* Resources */,
 			);
 			path = PokemonApp;
 			sourceTree = "<group>";
@@ -121,13 +116,68 @@
 			path = PokemonAppTests;
 			sourceTree = "<group>";
 		};
-		A5CA75CE2A0E2836000EE193 /* PokemonAppUITests */ = {
+		A5CA75E02A0E4360000EE193 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				A5CA75CF2A0E2836000EE193 /* PokemonAppUITests.swift */,
-				A5CA75D12A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift */,
+				A5CA75AE2A0E2836000EE193 /* AppDelegate.swift */,
+				A5CA75B02A0E2836000EE193 /* SceneDelegate.swift */,
+				A5CA75B92A0E2836000EE193 /* LaunchScreen.storyboard */,
 			);
-			path = PokemonAppUITests;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A5CA75E12A0E436C000EE193 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A5CA75E22A0E4379000EE193 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A5CA75E32A0E4389000EE193 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5CA75E42A0E43AC000EE193 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA75B42A0E2836000EE193 /* Main.storyboard */,
+				A5CA75B22A0E2836000EE193 /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A5CA75E52A0E4415000EE193 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A5CA75E72A0E4434000EE193 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA75E82A0E4513000EE193 /* Fonts */,
+				A5CA75B72A0E2836000EE193 /* Assets.xcassets */,
+				A5CA75BC2A0E2836000EE193 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5CA75E82A0E4513000EE193 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CA75D22A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift in Sources */,
-				A5CA75D02A0E2836000EE193 /* PokemonAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +491,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PokemonApp/Info.plist;
+				INFOPLIST_FILE = PokemonApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,7 +519,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PokemonApp/Info.plist;
+				INFOPLIST_FILE = PokemonApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
