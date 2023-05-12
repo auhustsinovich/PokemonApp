@@ -45,8 +45,8 @@ final class PokemonListPresenter: BasePresenter<PokemonListViewController> {
                     self.fillPokemonsList(with: data)
                     self.page += 1
                 case .failure(let error):
+                    Alert.show(on: self.view, title: Defaults.error, message: Defaults.connectErrorMessage)
                     print(error)
-                    // TODO: ALLERTS
                 }
             }
         }
@@ -66,8 +66,8 @@ final class PokemonListPresenter: BasePresenter<PokemonListViewController> {
                 self.fillPokemonsList(with: data)
                 self.page += 1
             case .failure(let error):
+                Alert.show(on: self.view, title: Defaults.error, message: Defaults.connectErrorMessage)
                 print(error)
-                // TODO: ALLERTS
             }
         }
     }
@@ -128,6 +128,7 @@ final class PokemonListPresenter: BasePresenter<PokemonListViewController> {
 
                 case .failure(let error):
                     print(error)
+                    Alert.show(on: self.view, title: Defaults.error, message: Defaults.dataErrorMessage)
                 }
             }
         }
