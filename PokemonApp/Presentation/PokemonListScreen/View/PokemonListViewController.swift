@@ -9,7 +9,11 @@ import UIKit
 
 class PokemonListViewController: BaseViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+
+
+
+    @IBOutlet var tableView: UITableView!
+
 
     private var pokemons = [Pokemon]() {
         didSet {
@@ -54,7 +58,6 @@ class PokemonListViewController: BaseViewController {
             navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         }
     }
-
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
