@@ -74,6 +74,14 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qec-Od-zMU" secondAttribute="trailing" constant="20" id="zNL-KX-otj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pokemonAbilitiesLabel" destination="lfs-jk-b2x" id="mo1-40-KTe"/>
+                        <outlet property="pokemonHeightLabel" destination="iky-wQ-WJc" id="PPA-Aw-AAZ"/>
+                        <outlet property="pokemonImageView" destination="67L-Rq-plL" id="Tql-oN-vri"/>
+                        <outlet property="pokemonNameLabel" destination="Shc-MF-biY" id="7C6-Q2-EAa"/>
+                        <outlet property="pokemonTypesLabel" destination="UFd-UX-IaF" id="WAu-oP-cdE"/>
+                        <outlet property="pokemonWeightLabel" destination="bLZ-2d-SoB" id="VpS-QA-waa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
