@@ -7,46 +7,43 @@
 
 import UIKit
 
+/// The PokemonListViewController class is responsible for displaying the list of pokemons in a table view and handling the UI interactions. It is a subclass of BaseViewController.
 class PokemonListViewController: BaseViewController {
 
-
-
+    // MARK: - Internal interface
 
     @IBOutlet var tableView: UITableView!
 
-
-    private var pokemons = [Pokemon]() {
-        didSet {
-            reloadTableView()
-        }
-    }
-
-    // MARK: - Casting for PokemonListPresenter
-    private var pokemonListPresenter: PokemonListPresenter? {
-        return presenter as? PokemonListPresenter
-    }
-
+    /**
+    The method that gets called when the view controller's view is first loaded into memory.
+    It calls setupNavigationBar and setupTableView methods to configure the navigation bar and table view respectively.
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupTableView()
     }
 
+    /**
+     Updates the view with the given array of Pokemon models.
+
+     - Parameter model: An array of Pokemon models to add to the existing list.
+     */
     func updateView(model: [Pokemon]) {
         pokemons.append(contentsOf: model)
     }
 
+    ///  Reloads the table view on the main thread.
     func reloadTableView() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
 
-    // Setup navigation bar
+    // MARK: - UI elements
     private func setupNavigationBar() {
         title = "Pokemons"
         navigationController?.navigationBar.prefersLargeTitles = true
-        // Navigation bar appearance
         if #available(iOS 13.0, *) {
             let navBarAppearance = UINavigationBarAppearance()
             navBarAppearance.configureWithOpaqueBackground()
@@ -58,12 +55,27 @@ class PokemonListViewController: BaseViewController {
             navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         }
     }
+
+    // MARK: - Private interface
+    
+    private var pokemons = [Pokemon]() {
+        didSet {
+            reloadTableView()
+        }
+    }
+
+    private var pokemonListPresenter: PokemonListPresenter? {
+        return presenter as? PokemonListPresenter
+    }
+
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: PokemonListCell.identifier, bundle: nil), forCellReuseIdentifier: PokemonListCell.identifier)
     }
 }
+
+// MARK: - Table View Delegate & DataSource
 
 extension PokemonListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

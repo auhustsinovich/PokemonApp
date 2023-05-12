@@ -2,6 +2,11 @@ import UIKit
 
 private let pokemonListStoryboardName = "PokemonListStoryboard"
 
+/**
+The Router extension provides a static method for initializing and configuring a PokemonListViewController from a specified storyboard.
+
+Returns: A configured instance of PokemonListViewController.
+*/
 extension Router {
     static func initPokemonListScreen() -> PokemonListViewController {
         let storyboard = UIStoryboard(name: pokemonListStoryboardName, bundle: nil)

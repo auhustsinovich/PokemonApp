@@ -7,9 +7,15 @@
 
 import UIKit
 
+/// A UITableViewCell subclass to display a single Pokemon item in the list.
 class PokemonListCell: UITableViewCell {
 
+    // MARK: - Internal interface
+
+    /// The label to display the Pokemon name.
     @IBOutlet weak var nameLabel: UILabel!
+
+    /// The image view to display the Pokemon's image.
     @IBOutlet weak var pokemonImageView: UIImageView! {
         didSet {
             pokemonImageView.contentMode = .scaleAspectFit
@@ -19,20 +25,30 @@ class PokemonListCell: UITableViewCell {
         }
     }
 
-    private var imageURL: URL? {
-        didSet {
-            updateImage()
-        }
-    }
-
+    /**
+     Prepares the cell for reuse by setting the name label to nil and the Pokemon image to the default logo.
+     */
     override func prepareForReuse() {
         nameLabel.text = nil
         pokemonImageView.image = UIImage(named: "pokemonLogo")
     }
 
+    /**
+     Configures the cell with the provided Pokemon data.
+
+     - Parameter pokemon: The Pokemon object to configure the cell with.
+     */
     func configure(with pokemon: Pokemon) {
         nameLabel.text = pokemon.name
         imageURL = pokemon.imageURL
+    }
+
+    // MARK: - Private interface
+
+    private var imageURL: URL? {
+        didSet {
+            updateImage()
+        }
     }
 
     private func updateImage() {
