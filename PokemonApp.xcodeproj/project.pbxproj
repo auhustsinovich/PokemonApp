@@ -21,6 +21,11 @@
 		A5CA75F52A0E477D000EE193 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F42A0E477D000EE193 /* NetworkError.swift */; };
 		A5CA75F82A0E48A3000EE193 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75F72A0E48A3000EE193 /* ImageCache.swift */; };
 		A5CA75FC2A0E4D71000EE193 /* pixelfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5CA75FB2A0E4D71000EE193 /* pixelfont.ttf */; };
+		A5CA76012A0E4EAC000EE193 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76002A0E4EAC000EE193 /* Router.swift */; };
+		A5CA76032A0E4EF2000EE193 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76022A0E4EF2000EE193 /* BasePresenter.swift */; };
+		A5CA76052A0E4F18000EE193 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76042A0E4F18000EE193 /* Presenter.swift */; };
+		A5CA76072A0E4F39000EE193 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76062A0E4F39000EE193 /* BaseViewController.swift */; };
+		A5CA76092A0E4F53000EE193 /* ViewLifecycleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76082A0E4F53000EE193 /* ViewLifecycleDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		A5CA75F42A0E477D000EE193 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A5CA75F72A0E48A3000EE193 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A5CA75FB2A0E4D71000EE193 /* pixelfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixelfont.ttf; sourceTree = "<group>"; };
+		A5CA76002A0E4EAC000EE193 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A5CA76022A0E4EF2000EE193 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		A5CA76042A0E4F18000EE193 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A5CA76062A0E4F39000EE193 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A5CA76082A0E4F53000EE193 /* ViewLifecycleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLifecycleDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +151,9 @@
 		A5CA75E12A0E436C000EE193 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A5CA75FF2A0E4E90000EE193 /* Router */,
+				A5CA75FD2A0E4E7F000EE193 /* Presenter */,
+				A5CA75FE2A0E4E89000EE193 /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -220,6 +233,32 @@
 				A5CA75F72A0E48A3000EE193 /* ImageCache.swift */,
 			);
 			path = Cache;
+			sourceTree = "<group>";
+		};
+		A5CA75FD2A0E4E7F000EE193 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA76022A0E4EF2000EE193 /* BasePresenter.swift */,
+				A5CA76042A0E4F18000EE193 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5CA75FE2A0E4E89000EE193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA76062A0E4F39000EE193 /* BaseViewController.swift */,
+				A5CA76082A0E4F53000EE193 /* ViewLifecycleDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5CA75FF2A0E4E90000EE193 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA76002A0E4EAC000EE193 /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,10 +394,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5CA76092A0E4F53000EE193 /* ViewLifecycleDelegate.swift in Sources */,
 				A5CA75EE2A0E46D7000EE193 /* NetworkManager.swift in Sources */,
+				A5CA76052A0E4F18000EE193 /* Presenter.swift in Sources */,
+				A5CA76032A0E4EF2000EE193 /* BasePresenter.swift in Sources */,
 				A5CA75F52A0E477D000EE193 /* NetworkError.swift in Sources */,
 				A5CA75F82A0E48A3000EE193 /* ImageCache.swift in Sources */,
+				A5CA76072A0E4F39000EE193 /* BaseViewController.swift in Sources */,
 				A5CA75B32A0E2836000EE193 /* ViewController.swift in Sources */,
+				A5CA76012A0E4EAC000EE193 /* Router.swift in Sources */,
 				A5CA75F32A0E4764000EE193 /* HTTPMethod.swift in Sources */,
 				A5CA75AF2A0E2836000EE193 /* AppDelegate.swift in Sources */,
 				A5CA75F12A0E4745000EE193 /* EndpointAPI.swift in Sources */,
