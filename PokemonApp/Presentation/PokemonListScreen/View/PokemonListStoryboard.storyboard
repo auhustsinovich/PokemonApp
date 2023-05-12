@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wd5-iK-i8d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbp-QX-UHL">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -7,43 +7,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pokemon List View Controller.swift-->
-        <scene sceneID="Bkt-09-vLz">
+        <!--Pokemon List View Controller-->
+        <scene sceneID="XZm-yb-K4J">
             <objects>
-                <tableViewController id="JhV-Ue-FfJ" customClass="PokemonListViewController.swift" customModule="PokemonApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CjL-Zo-SVF">
+                <tableViewController id="IvD-L0-ins" customClass="PokemonListViewController" customModule="PokemonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bSN-Qk-smu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <connections>
-                            <outlet property="dataSource" destination="JhV-Ue-FfJ" id="QOc-dW-ip2"/>
-                            <outlet property="delegate" destination="JhV-Ue-FfJ" id="KJ8-2O-338"/>
-                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="dxG-fF-EW5"/>
+                    <navigationItem key="navigationItem" id="b50-KB-T7t"/>
                     <connections>
-                        <outlet property="tableView" destination="CjL-Zo-SVF" id="UGR-Pz-KG7"/>
+                        <outlet property="tableView" destination="bSN-Qk-smu" id="Xwd-x0-T5t"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FuS-yH-Syt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6WQ-jW-tn8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="11"/>
+            <point key="canvasLocation" x="566" y="279"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="oTh-Ub-vyz">
+        <scene sceneID="koZ-Hc-lHg">
             <objects>
-                <navigationController id="Wd5-iK-i8d" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GZ0-4d-EwY">
+                <navigationController id="cbp-QX-UHL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="kFC-PR-kxJ">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="JhV-Ue-FfJ" kind="relationship" relationship="rootViewController" id="BOw-03-qG3"/>
+                        <segue destination="IvD-L0-ins" kind="relationship" relationship="rootViewController" id="DDI-BM-GVS"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hi6-Gh-a6X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6EV-h2-MbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-527" y="11"/>
+            <point key="canvasLocation" x="-268" y="279"/>
         </scene>
     </scenes>
     <resources>
