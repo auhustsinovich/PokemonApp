@@ -26,6 +26,9 @@
 		A5CA76052A0E4F18000EE193 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76042A0E4F18000EE193 /* Presenter.swift */; };
 		A5CA76072A0E4F39000EE193 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76062A0E4F39000EE193 /* BaseViewController.swift */; };
 		A5CA76092A0E4F53000EE193 /* ViewLifecycleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76082A0E4F53000EE193 /* ViewLifecycleDelegate.swift */; };
+		A5CA760C2A0E51B8000EE193 /* PokemonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA760B2A0E51B8000EE193 /* PokemonList.swift */; };
+		A5CA760E2A0E51DC000EE193 /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA760D2A0E51DC000EE193 /* PokemonDetail.swift */; };
+		A5CA76132A0E524F000EE193 /* CommonDefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA76122A0E524F000EE193 /* CommonDefaultValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		A5CA76042A0E4F18000EE193 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A5CA76062A0E4F39000EE193 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A5CA76082A0E4F53000EE193 /* ViewLifecycleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLifecycleDelegate.swift; sourceTree = "<group>"; };
+		A5CA760B2A0E51B8000EE193 /* PokemonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonList.swift; sourceTree = "<group>"; };
+		A5CA760D2A0E51DC000EE193 /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
+		A5CA76122A0E524F000EE193 /* CommonDefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDefaultValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 		A5CA75E22A0E4379000EE193 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A5CA76122A0E524F000EE193 /* CommonDefaultValues.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -175,6 +182,7 @@
 		A5CA75E42A0E43AC000EE193 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A5CA760A2A0E51A5000EE193 /* Models */,
 				A5CA75B42A0E2836000EE193 /* Main.storyboard */,
 				A5CA75B22A0E2836000EE193 /* ViewController.swift */,
 			);
@@ -259,6 +267,15 @@
 				A5CA76002A0E4EAC000EE193 /* Router.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		A5CA760A2A0E51A5000EE193 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA760B2A0E51B8000EE193 /* PokemonList.swift */,
+				A5CA760D2A0E51DC000EE193 /* PokemonDetail.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,15 +413,18 @@
 			files = (
 				A5CA76092A0E4F53000EE193 /* ViewLifecycleDelegate.swift in Sources */,
 				A5CA75EE2A0E46D7000EE193 /* NetworkManager.swift in Sources */,
+				A5CA76132A0E524F000EE193 /* CommonDefaultValues.swift in Sources */,
 				A5CA76052A0E4F18000EE193 /* Presenter.swift in Sources */,
 				A5CA76032A0E4EF2000EE193 /* BasePresenter.swift in Sources */,
 				A5CA75F52A0E477D000EE193 /* NetworkError.swift in Sources */,
 				A5CA75F82A0E48A3000EE193 /* ImageCache.swift in Sources */,
 				A5CA76072A0E4F39000EE193 /* BaseViewController.swift in Sources */,
+				A5CA760E2A0E51DC000EE193 /* PokemonDetail.swift in Sources */,
 				A5CA75B32A0E2836000EE193 /* ViewController.swift in Sources */,
 				A5CA76012A0E4EAC000EE193 /* Router.swift in Sources */,
 				A5CA75F32A0E4764000EE193 /* HTTPMethod.swift in Sources */,
 				A5CA75AF2A0E2836000EE193 /* AppDelegate.swift in Sources */,
+				A5CA760C2A0E51B8000EE193 /* PokemonList.swift in Sources */,
 				A5CA75F12A0E4745000EE193 /* EndpointAPI.swift in Sources */,
 				A5CA75B12A0E2836000EE193 /* SceneDelegate.swift in Sources */,
 			);
