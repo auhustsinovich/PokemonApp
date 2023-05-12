@@ -11,18 +11,18 @@
         <scene sceneID="Bkt-09-vLz">
             <objects>
                 <tableViewController id="JhV-Ue-FfJ" customClass="PokemonListViewController.swift" customModule="PokemonApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CjL-Zo-SVF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fjQ-1c-Qr5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
-                            <outlet property="dataSource" destination="JhV-Ue-FfJ" id="QOc-dW-ip2"/>
-                            <outlet property="delegate" destination="JhV-Ue-FfJ" id="KJ8-2O-338"/>
+                            <outlet property="dataSource" destination="JhV-Ue-FfJ" id="dcv-xG-rRe"/>
+                            <outlet property="delegate" destination="JhV-Ue-FfJ" id="CAC-S6-4zk"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="dxG-fF-EW5"/>
                     <connections>
-                        <outlet property="tableView" destination="CjL-Zo-SVF" id="UGR-Pz-KG7"/>
+                        <outlet property="tableView" destination="fjQ-1c-Qr5" id="C9o-Il-Uzb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuS-yH-Syt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
