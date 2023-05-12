@@ -16,6 +16,7 @@
 		A5CA75C62A0E2836000EE193 /* PokemonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75C52A0E2836000EE193 /* PokemonAppTests.swift */; };
 		A5CA75D02A0E2836000EE193 /* PokemonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75CF2A0E2836000EE193 /* PokemonAppUITests.swift */; };
 		A5CA75D22A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CA75D12A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift */; };
+		A5CA75DF2A0E3A01000EE193 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A5CA75DE2A0E3A01000EE193 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A5CA75CB2A0E2836000EE193 /* PokemonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CA75CF2A0E2836000EE193 /* PokemonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAppUITests.swift; sourceTree = "<group>"; };
 		A5CA75D12A0E2836000EE193 /* PokemonAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5CA75DE2A0E3A01000EE193 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A5CA75A22A0E2835000EE193 = {
 			isa = PBXGroup;
 			children = (
+				A5CA75DE2A0E3A01000EE193 /* README.md */,
 				A5CA75AD2A0E2836000EE193 /* PokemonApp */,
 				A5CA75C42A0E2836000EE193 /* PokemonAppTests */,
 				A5CA75CE2A0E2836000EE193 /* PokemonAppUITests */,
@@ -233,6 +236,7 @@
 			files = (
 				A5CA75BB2A0E2836000EE193 /* LaunchScreen.storyboard in Resources */,
 				A5CA75B82A0E2836000EE193 /* Assets.xcassets in Resources */,
+				A5CA75DF2A0E3A01000EE193 /* README.md in Resources */,
 				A5CA75B62A0E2836000EE193 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
