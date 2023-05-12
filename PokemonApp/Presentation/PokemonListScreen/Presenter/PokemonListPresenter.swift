@@ -45,8 +45,8 @@ final class PokemonListPresenter: BasePresenter<PokemonListViewController> {
                     self.fillPokemonsList(with: data)
                     self.page += 1
                 case .failure(let error):
+                    Alert.show(on: self.view, title: Defaults.error, message: Defaults.connectErrorMessage)
                     print(error)
-                    // TODO: ALLERTS
                 }
             }
         }
@@ -66,8 +66,8 @@ final class PokemonListPresenter: BasePresenter<PokemonListViewController> {
                 self.fillPokemonsList(with: data)
                 self.page += 1
             case .failure(let error):
+                Alert.show(on: self.view, title: Defaults.error, message: Defaults.connectErrorMessage)
                 print(error)
-                // TODO: ALLERTS
             }
         }
     }
@@ -76,7 +76,12 @@ final class PokemonListPresenter: BasePresenter<PokemonListViewController> {
 
     private var pokemons = [Pokemon]()
     private var page = 1
-
+    private var pokemonDetailsViewModel = PokemonDetailViewModel()
+    private var pokemonDetails: PokemonDetail! {
+        didSet {
+            pokemonDetailsViewModel = configureViewModel(pokemon: self.pokemonDetails)
+        }
+    }
     private func fillPokemonsList(with data: Data) {
         do {
             let pokemonsList = try JSONDecoder().decode(PokemonList.self, from: data)
@@ -109,4 +114,36 @@ final class PokemonListPresenter: BasePresenter<PokemonListViewController> {
         self.pokemons = newList
     }
 
+    func showPokemonInfo(with index: Int) {
+        DispatchQueue.global().async {
+            self.getData(from: .pokemonDetail(id: index)) { result in
+                switch result {
+                case .success(let data):
+                    self.fillPokemonDetails(with: data)
+                    if self.pokemonDetails != nil {
+                        DispatchQueue.main.async {
+                            self.router.goToDetailsScreen(pokemon: self.pokemonDetailsViewModel)
+                        }
+                    }
+
+                case .failure(let error):
+                    print(error)
+                    Alert.show(on: self.view, title: Defaults.error, message: Defaults.dataErrorMessage)
+                }
+            }
+        }
+    }
+
+    private func fillPokemonDetails(with data: Data) {
+        do {
+            let details = try JSONDecoder().decode(PokemonDetail.self, from: data)
+            self.pokemonDetails = details
+        } catch {
+            print(error)
+        }
+    }
+
+    private func configureViewModel(pokemon: PokemonDetail) -> PokemonDetailViewModel {
+        PokemonDetailViewModel.configure(pokemon: pokemon)
+    }
 }

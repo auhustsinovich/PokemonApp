@@ -1,12 +1,4 @@
-//
-//  PokemonListViewController.swift
-//  PokemonApp
-//
-//  Created by Daniil Auhustsinovich on 12.05.23.
-//
-
 import UIKit
-
 /// The PokemonListViewController class is responsible for displaying the list of pokemons in a table view and handling the UI interactions. It is a subclass of BaseViewController.
 class PokemonListViewController: BaseViewController {
 
@@ -98,5 +90,6 @@ extension PokemonListViewController: UITableViewDelegate, UITableViewDataSource 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        pokemonListPresenter?.showPokemonInfo(with: pokemons[indexPath.row].id ?? 0)
     }
 }

@@ -10,10 +10,21 @@ class BasePresenter<V: UIViewController>: Presenter {
         self.view   = view
         self.router = router
     }
-    /// The presenter implements several methods from the Presenter protocol, which are called at various points in the view controller lifecycle.
+
+    // MARK: Lifecycle methods
+
+    /// The viewDidLoad() method is called after the controller's view has been loaded into memory.
     func viewDidLoad() {}
+
+    /// The viewWillAppear(_:) method is called just before the view controller's view is about to be added to the view hierarchy.
     func viewWillAppear() {}
+
+    /// The viewDidAppear(_:) method is called after the view controller's view has been added to the view hierarchy.
     func viewDidAppear() {}
+
+    /// The viewWillDisappear(_:) method is called just before the view controller's view is removed from the view hierarchy.
     func viewWillDisappear() {}
+
+    /// The viewDidDisappear(_:) method is called after the view controller's view has been removed from the view hierarchy.
     func viewDidDisappear() {}
 }

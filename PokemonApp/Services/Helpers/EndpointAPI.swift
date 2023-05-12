@@ -1,5 +1,4 @@
 import Foundation
-
 /// Available API endpoints.
 enum EndpointAPI {
     /// The endpoint for the PokeAPI List.

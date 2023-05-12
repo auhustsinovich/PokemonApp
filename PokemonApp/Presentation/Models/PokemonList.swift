@@ -1,5 +1,4 @@
 import Foundation
-
 /// A struct representing a list of Pokemon.
 struct PokemonList: Decodable {
     let results: [Pokemon]
