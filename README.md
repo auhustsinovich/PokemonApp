@@ -19,6 +19,7 @@ The application uses the PokeAPI to get a list of Pokémon and additional inform
 The PokeAPI provides various endpoints that can be used to obtain information about Pokémon. In the application, we use the following endpoints:
 
 https://pokeapi.co/api/v2/pokemon - to get a list of Pokémon
+
 https://pokeapi.co/api/v2/pokemon/{pokemon-name} - to get additional information about a specific Pokémon
 We use the URLSession library to perform HTTP requests to the PokeAPI.
 
